@@ -1,6 +1,6 @@
 
 
-var bg = $(".videoWrapper, #loader, #navSp");
+var bg = $(".videoWrapper, #loader");
 
 function resizeBackground() {
     bg.height(jQuery(window).height() + 60);
