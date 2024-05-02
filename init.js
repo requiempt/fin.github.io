@@ -51,13 +51,7 @@ $(window).scroll(function(){
 })
 
 
-$("#loader").on('click', function(e) {
-  e.stopPropagation();
-  $(this).fadeOut(1000);
-  $(".logoBox").delay(800).fadeTo(1000, 1);
-  $(".header__about").delay(1100).fadeTo(1000, 1);
-  $(".btnKnowMore").delay(1200).fadeTo(1000, 1);
-});
+
 
 rotateValue=0;
 function rotateCircle(){
