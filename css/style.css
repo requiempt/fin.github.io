@@ -66,7 +66,6 @@ p {
 }
 /* HEADER - HEADER - HEADER - HEADER - HEADER - HEADER - HEADER - */
 .videoWrapper {
-	transition: height 999999s;
 	z-index: -1;
     position: fixed;
     width: 100%;
@@ -82,12 +81,14 @@ p {
 	width: 100%;
 }
 #loader{
-	transition: height 999999s;
+
 	position:fixed;
 	 height:100%; 
 	 width:100%; overflow:hidden;
 	  top:0;
 	   left:0;
+	   bottom: 0;
+	   right: 0;
 z-index: 111;
 display: flex;
 justify-content: center;
@@ -824,7 +825,6 @@ nav .brand-logo span {
 
 }
 #navSp{
-	transition: height 999999s;
 	display: none;
 	z-index: 99999;
 	position: fixed;
