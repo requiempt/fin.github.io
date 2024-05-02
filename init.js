@@ -1,14 +1,5 @@
 
 
-var bg = $(".videoWrapper, #loader, #navSp");
-
-function resizeBackground() {
-    bg.height(jQuery(window).height() + 60);
-}
-
-$(window).resize(resizeBackground);
-resizeBackground();
-
 
 const navigation = document.querySelector(".primary-navigation");
 
