@@ -503,6 +503,7 @@ z-index: 22;
     background-size: auto 100%;
     background-position: center;
     z-index: -1;
+	   background-attachment: fixed;
 }
 
 .service .noMargin{
