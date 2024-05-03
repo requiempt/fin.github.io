@@ -1,5 +1,15 @@
 
 
+var bg = $("#home");
+
+function resizeBackground() {
+   bg.height(jQuery(window).height());
+}
+
+$(document).ready(function() {
+  setTimeout(function() { resizeBackground(); }, 1);
+});
+
 
 
 const navigation = document.querySelector(".primary-navigation");
@@ -119,7 +129,9 @@ $('#captcha').click(function(){
 	}
 
 	$('.navSpTriger').click(function(){
-		showMobileNav()
+		showMobileNav();
+		$("body").css("overflow-y", "hidden")
+
 	})
 
 

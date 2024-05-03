@@ -116,8 +116,6 @@ background-size: 100% 100%;
 .header{
 	display: flex;
 	position: relative;
-	    height: calc(100vh + 60px);
-    padding-bottom: 60px;
 	width: 100%;
 	align-items: center;
 
