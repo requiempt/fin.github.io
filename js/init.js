@@ -1,6 +1,6 @@
 
 
-var bg = $("#home, #navSpContainer");
+var bg = $("#home");
 
 function resizeBackground() {
    bg.height(jQuery(window).height());
