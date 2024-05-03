@@ -10,7 +10,15 @@ $(document).ready(function() {
   setTimeout(function() { resizeBackground(); }, 1);
 });
 
+var navfix = $("#navSp");
 
+function resizeNav() {
+   navfix.height(jQuery(window).height() + 60);
+}
+
+$(document).ready(function() {
+  setTimeout(function() { resizeNav(); }, 1);
+});
 
 const navigation = document.querySelector(".primary-navigation");
 

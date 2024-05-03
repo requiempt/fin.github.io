@@ -10,6 +10,19 @@ body{
 }
 
 
+html {
+
+  overflow: hidden;
+}
+
+body {
+  position: fixed;
+  /* prevent overscroll bounce*/
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  /* iOS velocity scrolling */
+}
+
 html{
 	scroll-behavior: smooth;
 	 scroll-padding: var(--scroll-padding, 5rem);
@@ -91,7 +104,8 @@ p {
 
 	position:fixed;
 	 height:100%; 
-	 width:100%; overflow:hidden;
+	 width:100%; 
+	 overflow:hidden;
 	  top:0;
 	   left:0;
 	   bottom: 0;
@@ -833,10 +847,9 @@ nav .brand-logo span {
 #navSp{
 	display: none;
 	z-index: 99999;
-	position: absolute;
+	position: sticky;
 	top: 0;
 	left: 0;
-	height: 100%;
 }
 #navSpContainer{
 	display: flex;
