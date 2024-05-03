@@ -14,6 +14,9 @@ html{
 	scroll-behavior: smooth;
 	 scroll-padding: var(--scroll-padding, 5rem);
 }
+.costbody{
+	overflow-y: hidden !important;
+}
 @font-face {
 	font-family : 'viceCity';
 	src :  url('ViceCitySans.woff') format('woff'), url('ViceCitySans.woff2') format('woff2'), url('ViceCitySans.otf') format('otf'), url('ViceCitySans.ttf') format('truetype');

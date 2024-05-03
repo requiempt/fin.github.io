@@ -130,7 +130,7 @@ $('#captcha').click(function(){
 
 	$('.navSpTriger').click(function(){
 		showMobileNav();
-		$("body").css("overflow-y", "hidden")
+		$("body").toggleClass("costbody")
 
 	})
 
