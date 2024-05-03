@@ -1,5 +1,8 @@
 
 
+
+
+
 const navigation = document.querySelector(".primary-navigation");
 
 const navigationHeight = navigation.offsetHeight;
@@ -53,6 +56,7 @@ $(window).scroll(function(){
 $("#loader").on('click', function(e) {
   e.stopPropagation();
   $(this).fadeOut(1000);
+  $("body").css("overflow-y", "inherit");
   $(".logoBox").delay(800).fadeTo(1000, 1);
   $(".header__about").delay(1100).fadeTo(1000, 1);
   $(".btnKnowMore").delay(1200).fadeTo(1000, 1);
@@ -116,7 +120,9 @@ $('#captcha').click(function(){
 	}
 
 	$('.navSpTriger').click(function(){
-		showMobileNav()
+		showMobileNav();
+		$("body").toggleClass("costbody")
+
 	})
 
 
