@@ -17,6 +17,9 @@ html{
 .costbody{
 	overflow-y: hidden !important;
 }
+#home{
+	min-height: 600px;
+}
 @font-face {
 	font-family : 'viceCity';
 	src :  url('ViceCitySans.woff') format('woff'), url('ViceCitySans.woff2') format('woff2'), url('ViceCitySans.otf') format('otf'), url('ViceCitySans.ttf') format('truetype');
@@ -838,7 +841,6 @@ nav .brand-logo span {
 	display: flex;
 	align-items: center;
 	width: 100vw;
-	min-height: 100vh;
 	background: rgba(0,27,52, .9);
 }
 #navSpContainer ul{
