@@ -116,11 +116,17 @@ background-size: 100% 100%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#home .container{
-	    position: absolute;
+#home .container {
+    position: absolute;
     min-height: 100vh;
     display: flex;
     align-items: center;
+    top: 0px;
+    bottom: 0px;
+    left: 50%;
+    transform: translatex(-50%);
+    min-height: 100vh;
+    height: 800px;
 }
 .header{
 	display: flex;
@@ -145,7 +151,7 @@ background-size: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 .header .headerMask{
