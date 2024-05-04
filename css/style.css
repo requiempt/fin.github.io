@@ -150,9 +150,7 @@ background-size: 100% 100%;
 	background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: fixed;
-  height: 100%;
-  width: 100vw;
+
 }
 .header .headerMask{
 	z-index: -1;
