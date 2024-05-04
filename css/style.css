@@ -1212,8 +1212,10 @@ margin-bottom: 20px;
 }
 }
 @media(max-width:440px){
+	#loader{
+	background-image: url(../img/outs.png) !important;
+}
 .header .headerBg, .bgMod::before {
-   
 background-attachment: inherit;
 }
 			.loader__inner img {
