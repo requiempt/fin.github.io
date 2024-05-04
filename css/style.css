@@ -116,18 +116,7 @@ background-size: 100% 100%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-#home .container {
-    position: absolute;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    top: 0px;
-    bottom: 0px;
-    left: 50%;
-    transform: translatex(-50%);
-    min-height: 100vh;
-    height: 800px;
-}
+
 .header{
 	display: flex;
 	position: relative;
@@ -143,14 +132,13 @@ background-size: 100% 100%;
 	width: 100%;
 	height: 100%;
 }
-
-.header .headerBg{
-	z-index: -2;
-	background-image: url('../img/bgheader.jpg');
-	background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+.header .headerBg {
+    z-index: -2;
+    background-image: url(../img/bgheader.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+background-attachment: fixed;
 }
 .header .headerMask{
 	z-index: -1;
@@ -510,7 +498,7 @@ z-index: 22;
 	background-image: url(../img/out.png);
     background-size: auto 100%;
     background-position: center;
-	
+    background-attachment: fixed;
     z-index: -1;
 }
 
@@ -972,6 +960,7 @@ nav .brand-logo span {
 }	   
 }
 @media(max-width:1025px){
+
 	.loader__inner img {
 	width: 55%;
     
@@ -1223,6 +1212,10 @@ margin-bottom: 20px;
 }
 }
 @media(max-width:440px){
+.header .headerBg, .bgMod::before {
+   
+background-attachment: inherit;
+}
 			.loader__inner img {
 	width: 90%;
     
