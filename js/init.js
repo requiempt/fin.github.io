@@ -1,8 +1,6 @@
 
 
 
-
-
 const navigation = document.querySelector(".primary-navigation");
 
 const navigationHeight = navigation.offsetHeight;
@@ -53,15 +51,25 @@ $(window).scroll(function(){
 })
 
 
-$("#loader").on('click', function(e) {
+if ($(window).width() > 450) {
+
+   $("#loader").on('click', function(e) {
   e.stopPropagation();
   $(this).fadeOut(1000);
-  $("body").css("overflow-y", "inherit");
   $(".logoBox").delay(800).fadeTo(1000, 1);
   $(".header__about").delay(1100).fadeTo(1000, 1);
   $(".btnKnowMore").delay(1200).fadeTo(1000, 1);
-});
+})
+}
+else{
+  
+  $('#loader').css('display', 'None');
+    $('.logoBox').css('opacity', '1');
+      $('.header__about').css('opacity', '1');
+        $('.btnKnowMore').css('opacity', '1');
 
+}
+	
 rotateValue=0;
 function rotateCircle(){
 	rotateValue+=2;
@@ -89,6 +97,7 @@ $('#captcha').click(function(){
 
 	function setNavState(){
 		if(screen.width>768){
+
 			if($(window).scrollTop()!=0){
 				$('nav').css('background','rgb(0,27,52)')
 				$('nav').css('box-shadow','0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2)')

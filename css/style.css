@@ -8,9 +8,7 @@ html{
 html, body{
 	min-height: 100vh;
 }
-body{
-overflow-y: hidden ;
-}
+
 
 .costbody{
 	overflow-y: hidden !important;
@@ -26,15 +24,7 @@ html{
     font-weight : 300;
     font-style  : normal;
 }
-@font-face {
-  font-family: "Roboto";
-  src: url("..img/Gabriola.ttf") format('ttf');
-  font-weight : 300;
-    font-style  : normal;
-}
-.header__about{
-	font-family: Roboto;
-}
+
 h1,
 h2,
 h3{
@@ -524,9 +514,6 @@ z-index: 22;
 	background-position: center center;
 }
 
-.service .bgImg.bgInvestments{
-	background-image:url('../img/investments.jpeg');
-}
 
 .service .serviceBox{
 	position: relative;
@@ -1211,10 +1198,10 @@ margin-bottom: 20px;
     height: 40px;  
 }
 }
+
 @media(max-width:440px){
-	
-.header .headerBg, .bgMod::before {
-background-attachment: inherit;
+#loader{
+	display: none;
 }
 			.loader__inner img {
 	width: 90%;
