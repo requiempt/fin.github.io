@@ -311,11 +311,14 @@ background-attachment: fixed;
 }
 .team__inner{
 position: relative;
-	padding: 50px 50px 50px 100px;
+	padding: 100px 50px 70px 50px;
 }
 .slider, .sliderTh{
 	z-index: 10;
 height: auto;
+}
+.slider{
+		background: rgb(0,27,52);
 }
 .slick-list {
 	overflow: hidden;
@@ -356,7 +359,7 @@ bottom: -1px;
 }
 
  .info__wrp{
-	width: 45%;
+	width: 65%;
 	position: relative;
 	min-height: 640px;
 	display: flex;
@@ -404,7 +407,6 @@ font-weight: bold;
 }
 
 .sliderTh .slick-track{
-flex-direction: column;
 height: auto;
 transform: none !important;
 width: auto !important;
@@ -436,12 +438,18 @@ color:  rgb(5,52,97) !important;
 }
 .sliderTh {
 position: absolute;
-top: 30%;
-right: -20px;
+top: -65px;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
 z-index: 22;
 }
 
-
+.sliderTh .slick-track .thumb-slide {
+    margin: 6px;
+    cursor: pointer;
+    
+}
 
 .service .noMargin{
 	margin: 0;
@@ -947,7 +955,12 @@ nav .brand-logo span {
 }	   
 }
 @media(max-width:1025px){
-
+	.team__inner {
+padding-left: 50px;	
+	}
+.sliderTh {
+    left: 50%;
+}
 	.loader__inner img {
 	width: 55%;
     
@@ -1011,19 +1024,11 @@ text-align: center;
 	}
 	.info__wrp {
     width: 80%;
-     min-height: 500px;
+     min-height: 570px;
 }
-
-.team__inner {
-    padding: 50px;
-    padding-top: 80px;
+ .team__inner {
+    padding-bottom: 60px;
 }
-  .sliderTh {
-   top: -65px;
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
-} 
 .sliderTh .slick-list{
 	padding: 0 !important;
 }
@@ -1034,10 +1039,7 @@ text-align: center;
 	width: 100% !important;
 	flex-direction: row;
 }
-.sliderTh .slick-track .thumb-slide {
-   
-    margin: 6px;
-}
+
 }
 @media(max-width:950px){
 		.loader__inner img {
