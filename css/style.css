@@ -1200,7 +1200,7 @@ margin-bottom: 20px;
 }
 
 @media(max-width:440px){
-	.header .headerBg, .bgMod::before {
+.header .headerBg, .bgMod::before {
 background-attachment: inherit;
 }
 
