@@ -592,12 +592,13 @@ height: 450px;
 }
 
 .adressBox{
-	bottom: -55px;
-	right: -100px;
-	transition: all .16s ease-in-out;
-	position: absolute;
-	width: 200px;
-z-index: 11;
+bottom: -55px;
+    right: 50%;
+    transition: all .16s ease-in-out;
+    position: absolute;
+    width: 200px;
+    z-index: 11;
+    transform: translateX(50%);
 }
 
 .tabsAddress{
@@ -1079,9 +1080,7 @@ background-size: auto 100%;
 	#nav-mobile{
 		display: none !important;
 	}
-	.service .displayFlex{
-		display: initial;
-	}
+	
 	.imgDeco{
 		display: none;
 	}
